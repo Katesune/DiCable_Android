@@ -15,7 +15,7 @@
 На каждом виджете расположены две кнопки, при нажатии элемент добавляется в коллекцию, левая кнопка добавляет элемент в коллекцию "Просмотрено", правый - "Фиксировано".
 Если кнопка черного цвета, элемент уже находится в коллекции. В правом нижнем углу виджета есть кнопка, которая раскрывает или скрывает элемент.
 
-<img height="438.75" width="202.5" alt="collection" src="https://user-images.githubusercontent.com/72875986/172069833-5c57ccfd-2b0d-44d5-93ba-221cc1725591.jpg"><img height="438.75" width="202.5" alt="open" src="https://user-images.githubusercontent.com/72875986/172069847-357bbe02-0faa-43e8-8464-7ca50ab7a28e.jpg">
+<img height="438.75" width="202.5" alt="collection" src="https://user-images.githubusercontent.com/72875986/172069833-5c57ccfd-2b0d-44d5-93ba-221cc1725591.jpg">   <img height="438.75" width="202.5" alt="open" src="https://user-images.githubusercontent.com/72875986/172069847-357bbe02-0faa-43e8-8464-7ca50ab7a28e.jpg">
 
 Добавлен также поиск элементов по IP-адресу:
 

@@ -34,9 +34,9 @@ import com.google.gson.GsonBuilder;
 import java.util.ArrayList;
 import java.util.List;
 
-import GroupAnswer.AllAnswersActivity;
-import GroupAnswer.FixedAnswersActivity;
-import GroupAnswer.WatchedAnswersActivity;
+import com.example.dicable.GroupAnswer.AllAnswersActivity;
+import com.example.dicable.GroupAnswer.FixedAnswersActivity;
+import com.example.dicable.GroupAnswer.WatchedAnswersActivity;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Retrofit;

@@ -22,7 +22,7 @@
         </activity>
 
 
-        <activity android:name="GroupAnswer.AllAnswersActivity">
+        <activity android:name="com.example.dicable.GroupAnswer.AllAnswersActivity">
             <intent-filter>
                 <action android:name="android.intent.action.SEARCH" />
             </intent-filter>
@@ -32,7 +32,7 @@
                 android:resource="@xml/searchable" />
         </activity>
 
-        <activity android:name="GroupAnswer.FixedAnswersActivity">
+        <activity android:name="com.example.dicable.GroupAnswer.FixedAnswersActivity">
             <intent-filter>
                 <action android:name="android.intent.action.SEARCH" />
             </intent-filter>
@@ -42,7 +42,7 @@
                 android:resource="@xml/searchable" />
         </activity>
 
-        <activity android:name="GroupAnswer.WatchedAnswersActivity">
+        <activity android:name="com.example.dicable.GroupAnswer.WatchedAnswersActivity">
             <intent-filter>
                 <action android:name="android.intent.action.SEARCH" />
             </intent-filter>

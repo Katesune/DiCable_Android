@@ -2,9 +2,7 @@ package com.example.dicable.Graphics;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.constraintlayout.widget.ConstraintLayout;
 
-import android.app.SearchManager;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
@@ -21,7 +19,6 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
-import com.jjoe64.graphview.GraphView;
 import com.jjoe64.graphview.series.DataPoint;
 import com.jjoe64.graphview.series.LineGraphSeries;
 
@@ -31,9 +28,9 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Set;
 
-import GroupAnswer.AllAnswersActivity;
-import GroupAnswer.FixedAnswersActivity;
-import GroupAnswer.WatchedAnswersActivity;
+import com.example.dicable.GroupAnswer.AllAnswersActivity;
+import com.example.dicable.GroupAnswer.FixedAnswersActivity;
+import com.example.dicable.GroupAnswer.WatchedAnswersActivity;
 import im.dacer.androidcharts.BarView;
 
 public class StatisticActivity extends AppCompatActivity {

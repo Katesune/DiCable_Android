@@ -17,6 +17,6 @@
 
 <img height="438.75" width="202.5" alt="collection" src="https://user-images.githubusercontent.com/72875986/172069833-5c57ccfd-2b0d-44d5-93ba-221cc1725591.jpg">   <img height="438.75" width="202.5" alt="open" src="https://user-images.githubusercontent.com/72875986/172069847-357bbe02-0faa-43e8-8464-7ca50ab7a28e.jpg">
 
-Добавлен также поиск элементов по IP-адресу:
+Добавлен также поиск элементов по IP-адресу и небольшой график, считающий количество запросов по IP-адресам:
 
-<img height="438.75" width="202.5" alt="search" src="https://user-images.githubusercontent.com/72875986/172069882-7d9ab136-8c3a-4506-9301-d27ee656792a.jpg">
+<img height="438.75" width="202.5" alt="search" src="https://user-images.githubusercontent.com/72875986/172069882-7d9ab136-8c3a-4506-9301-d27ee656792a.jpg">   <img height="438.75" width="202.5" alt="search" src="https://user-images.githubusercontent.com/72875986/172071047-53f4de2b-3019-4ab1-b652-800ccb0f8123.jpg">

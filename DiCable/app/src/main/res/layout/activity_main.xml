@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scroll"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        android:background="@color/grey">
+
+
+        <HorizontalScrollView
+            android:id="@+id/myview"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp">
+
+            <LinearLayout
+                android:id="@+id/tub_butts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/butt_diag"
+                    style="@style/TabButtonActive"
+                    android:layout_marginVertical="10dp"
+                    android:layout_marginStart="24dp"
+                    android:text="@string/butt_diag"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/butt_all"
+                    style="@style/TabButton"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:onClick="goToAll"
+                    android:text="@string/butt_all"
+                    app:layout_constraintStart_toEndOf="@+id/butt_diag"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/butt_watched"
+                    style="@style/TabButton"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_toEndOf="@+id/butt_all"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:text="@string/butt_watched"
+                    app:layout_constraintStart_toEndOf="@+id/butt_all"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:onClick="goToWatched"/>
+
+                <Button
+                    android:id="@+id/butt_fixed"
+                    style="@style/TabButton"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_toEndOf="@+id/butt_watched"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:text="@string/butt_fixed"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toEndOf="@+id/butt_watched"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:onClick="goToFixed"/>
+
+                <Button
+                    android:id="@+id/butt_statistic"
+                    style="@style/TabButton"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="24dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_toEndOf="@+id/butt_fixed"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:text="@string/butt_statistic"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toEndOf="@+id/butt_watched"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:onClick="goToStatistic"/>
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <RelativeLayout
+            android:id="@+id/switch_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_view"
+                style="@style/MyCardViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="112dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="80dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginBottom="20dp"
+                app:cardCornerRadius="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="112dp"
+                    android:padding="0dp">
+
+                <RelativeLayout
+                    android:id="@+id/item1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="56dp"
+                    android:padding="0dp">
+
+                    <TextView
+                        android:id="@+id/ip_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp"
+                        android:gravity="center_vertical|left|center_horizontal"
+                        android:text="IP"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:layout_centerVertical="true"/>
+
+                    <EditText
+                        android:id="@+id/user_ip"
+                        android:layout_width="200dp"
+                        android:layout_height="36dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/ip_label"
+                        android:background="@drawable/corners_all"
+                        android:hint="127.127.127.127"
+                        android:padding="7dp"
+                        android:textColor="@color/black"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/item2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="56dp"
+                    android:padding="0dp"
+                    android:layout_below="@+id/item1">
+
+                    <TextView
+                        android:id="@+id/port_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="42dp"
+                        android:gravity="center_vertical|left"
+                        android:text="Порт"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:layout_centerVertical="true"/>
+
+                    <EditText
+                        android:id="@+id/user_port"
+                        android:layout_width="76dp"
+                        android:layout_height="36dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/port_label"
+                        android:background="@drawable/corners_all"
+                        android:hint="26"
+                        android:padding="7dp"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/black"/>
+
+                    <ImageButton
+                        android:id="@+id/start_button"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/user_port"
+                        android:background="@drawable/start_black"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:onClick="search"
+                        android:layout_centerVertical="true" />
+                </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/repair_card_view"
+                        android:layout_width="52dp"
+                        android:layout_height="56dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="0dp"
+                        android:background="@drawable/tab_butt_style">
+
+                        <ImageButton
+                            android:id="@+id/fixed_button"
+                            android:layout_width="52dp"
+                            android:layout_height="56dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentRight="true"
+                            android:adjustViewBounds="true"
+                            android:background="@drawable/repair_no_active"
+                            android:onClick="fixRequest"
+                            android:scaleType="fitCenter" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/watch_card_view"
+                        android:layout_width="52dp"
+                        android:layout_height="56dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginRight="0dp"
+                        android:background="@drawable/tab_butt_style">
+
+                        <ImageButton
+                            android:id="@+id/watch_button"
+                            android:layout_width="52dp"
+                            android:layout_height="56dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentBottom="true"
+                            android:adjustViewBounds="true"
+                            android:background="@drawable/vision_no_active"
+                            android:onClick="watchRequest"
+                            android:scaleType="fitCenter" />
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+

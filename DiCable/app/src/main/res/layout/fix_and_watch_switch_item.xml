@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        style="@style/MyCardViewStyle"
+        android:layout_width="364dp"
+        android:layout_height="435dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="20dp"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="0dp">
+
+            <TextView
+                android:id="@+id/ip"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|left|center_horizontal"
+                android:paddingTop="10dp"
+                android:text="IP: 127.0.0.1"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/port"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ip"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center_vertical|left"
+                android:text="Порт: 21"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/state_port"
+                style="@style/TableDataLeft"
+                android:layout_below="@+id/port"
+                android:text="@string/state_port" />
+
+            <TextView
+                android:id="@+id/state_port_val"
+                style="@style/TableDataRight"
+                android:layout_below="@+id/port"
+                android:text="Норма" />
+
+            <View
+                android:id="@+id/state_port_line"
+                style="@style/Divider"
+                android:layout_below="@+id/state_port_val" />
+
+            <TextView
+                android:id="@+id/port_speed"
+                style="@style/TableDataLeft"
+                android:layout_below="@+id/state_port_line"
+                android:text="@string/port_speed" />
+
+            <TextView
+                android:id="@+id/port_speed_val"
+                style="@style/TableDataRight"
+                android:layout_below="@+id/state_port_line"
+                android:text="100 GB" />
+
+            <View
+                android:id="@+id/port_speed_line"
+                style="@style/Divider"
+                android:layout_below="@+id/port_speed_val" />
+
+            <TextView
+                android:id="@+id/enabled_port"
+                style="@style/TableDataLeft"
+                android:layout_below="@+id/port_speed_line"
+                android:text="@string/enabled_port" />
+
+            <TextView
+                android:id="@+id/enabled_port_val"
+                style="@style/TableDataRight"
+                android:layout_below="@+id/port_speed_line"
+                android:text="Доступен" />
+
+            <View
+                android:id="@+id/enabled_port_line"
+                style="@style/Divider"
+                android:layout_below="@+id/enabled_port_val" />
+
+            <TextView
+                android:id="@+id/diag_action"
+                style="@style/TableDataLeft"
+                android:layout_below="@+id/enabled_port_line"
+                android:text="@string/diag_action" />
+
+            <TextView
+                android:id="@+id/diag_action_val"
+                style="@style/TableDataRight"
+                android:layout_below="@+id/enabled_port_line"
+                android:text="processing" />
+
+            <View
+                android:id="@+id/diag_action_line"
+                style="@style/Divider"
+                android:layout_below="@+id/diag_action_val" />
+
+            <TextView
+                android:id="@+id/pair1_status"
+                style="@style/TableDataLeft"
+                android:layout_below="@+id/diag_action_line"
+                android:text="@string/pair1_status" />
+
+            <TextView
+                android:id="@+id/pair1_status_val"
+                style="@style/TableDataRight"
+                android:layout_below="@+id/diag_action_line"
+                android:text="ok" />
+
+            <View
+                android:id="@+id/pair1_status_line"
+                style="@style/Divider"
+                android:layout_below="@+id/pair1_status_val" />
+
+            <TextView
+                android:id="@+id/pair1_length"
+                style="@style/TableDataLeft"
+                android:layout_below="@+id/pair1_status_line"
+                android:text="@string/pair1_length" />
+
+            <TextView
+                android:id="@+id/pair1_length_val"
+                style="@style/TableDataRight"
+                android:layout_below="@+id/pair1_status_line"
+                android:text="23" />
+
+            <View
+                android:id="@+id/pair1_length_line"
+                style="@style/Divider"
+                android:layout_below="@+id/pair1_length_val" />
+
+            <TextView
+                android:id="@+id/pair2_status"
+                style="@style/TableDataLeft"
+                android:layout_below="@+id/pair1_length_line"
+                android:text="@string/pair2_status" />
+
+            <TextView
+                android:id="@+id/pair2_status_val"
+                style="@style/TableDataRight"
+                android:layout_below="@+id/pair1_length_line"
+                android:text="25" />
+
+            <View
+                android:id="@+id/pair2_status_line"
+                style="@style/Divider"
+                android:layout_below="@+id/pair2_status_val" />
+
+            <TextView
+                android:id="@+id/pair2_length"
+                style="@style/TableDataLeft"
+                android:layout_below="@+id/pair2_status_line"
+                android:text="@string/pair2_length" />
+
+            <TextView
+                android:id="@+id/pair2_length_val"
+                style="@style/TableDataRight"
+                android:layout_below="@+id/pair2_status_line"
+                android:text="25" />
+
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginBottom="18dp"
+                android:layout_toStartOf="@+id/expand_button"
+                android:gravity="center_vertical|left"
+                android:text="Tue, 21 Nov 2006 16:30:00 GMT"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <RelativeLayout
+                android:id="@+id/butt_card_view"
+                android:layout_width="105dp"
+                android:layout_height="49dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="0dp"
+                android:background="@drawable/corners_black_right_top"
+                android:paddingLeft="2.5dp">
+
+                <ImageButton
+                    android:id="@+id/fixed_button"
+                    android:layout_width="50dp"
+                    android:layout_height="46dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/repair_active"
+                    android:onClick="Fixed" />
+
+                <ImageButton
+                    android:id="@+id/watch_button"
+                    android:layout_width="50dp"
+                    android:layout_height="46dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/vision_active_switch"
+                    android:onClick="WatchedSwitch" />
+
+
+            </RelativeLayout>
+
+            <ImageButton
+                android:id="@+id/expand_button"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/expand" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

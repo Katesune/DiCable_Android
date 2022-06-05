@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <TextView
+    android:id="@+id/errorStatus"
+    style="@style/TableDataLeft"
+        android:text="@string/errorStatus"/>
+
+    <TextView
+        android:id="@+id/errorStatus_val"
+        style="@style/TableDataRight" />
+
+    <View
+        android:id="@+id/errorStatus_line"
+        style="@style/Divider"
+        android:layout_below="@+id/errorStatus_val" />
+
+    <TextView
+        android:id="@+id/errorIndex"
+        style="@style/TableDataLeft"
+        android:layout_below="@+id/errorStatus_line"
+        android:text="@string/errorIndex"/>
+
+    <TextView
+        android:id="@+id/errorIndex_val"
+        style="@style/TableDataRight"
+        android:layout_below="@+id/errorStatus_line"/>
+
+    <View
+        android:id="@+id/errorIndex_line"
+        style="@style/Divider"
+        android:layout_below="@+id/errorIndex_val" />
+</RelativeLayout>

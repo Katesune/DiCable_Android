@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">DiCable</string>
+    <string-array name="catNames">
+        <item>Барсик</item>
+        <item>Мурзик</item>
+        <item>Васька</item>
+        <item>Рыжик</item>
+    </string-array>
+
+    <string name="login_label">Войти в аккаунт</string>
+    <string name="google_label">Войти с помощью google</string>
+    <string name="login">Войти</string>
+
+    <string name="butt_diag">Диагностика</string>
+    <string name="butt_all">Все</string>
+    <string name="butt_watched">Просмотрено</string>
+    <string name="butt_fixed">Фиксировано</string>
+    <string name="butt_statistic">Статистика</string>
+
+    <string name="theme_menu_basic">Светлая тема</string>
+    <string name="theme_menu_dark">Яркая тема</string>
+    <string name="theme_menu_bright">Темная тема</string>
+
+    <string name="logout">Выйти из аккаунта</string>
+
+    <string name="ip">IP</string>
+    <string name="port">Порт</string>
+
+    <string name="info1"> Статус порта: норма, скорость порта: 1 Gb, доступность: да </string>
+    <string name="info2"> Обрыв первой пары: 12, обрыв второй пары: 2 </string>
+
+    <string name="state_port">Статус порта</string>
+    <string name="port_speed">Скорость порта</string>
+    <string name="enabled_port">Доступность</string>
+
+    <string name="errorIndication">Ошибка</string>
+    <string name="errorStatus">Статус ошибки</string>
+    <string name="errorIndex">Индекс ошибки</string>
+
+    <string name="diag_action">Запуск диагностики</string>
+
+    <string name="pair1_status">Статус 1 пары</string>
+    <string name="pair1_length">Поломка 1 пары</string>
+    <string name="pair2_status">Статус 2 пары</string>
+    <string name="pair2_length">Поломка 2 пары</string>
+
+
+
+</resources>

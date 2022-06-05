@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scroll"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/all"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".GroupAnswer.FixedAnswersActivity"
+        android:background="@color/grey">
+
+        <HorizontalScrollView
+            android:id="@+id/myview"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp">
+
+            <LinearLayout
+                android:id="@+id/tub_butts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/butt_diag"
+                    style="@style/TabButton"
+                    android:layout_marginVertical="10dp"
+                    android:layout_marginStart="24dp"
+                    android:state_enabled="false"
+                    android:text="@string/butt_diag"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:onClick="goMain"/>
+
+                <Button
+                    android:id="@+id/butt_all"
+                    style="@style/TabButtonActive"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:state_enabled="false"
+                    android:text="@string/butt_all"
+                    app:layout_constraintStart_toEndOf="@+id/butt_diag"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/butt_watched"
+                    style="@style/TabButton"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_toEndOf="@+id/butt_all"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:text="@string/butt_watched"
+                    app:layout_constraintStart_toEndOf="@+id/butt_all"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:onClick="goToWatched"/>
+
+                <Button
+                    android:id="@+id/butt_fixed"
+                    style="@style/TabButton"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_toEndOf="@+id/butt_watched"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:text="@string/butt_fixed"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toEndOf="@+id/butt_watched"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:onClick="goToFixed"/>
+
+                <Button
+                    android:id="@+id/butt_statistic"
+                    style="@style/TabButton"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="24dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_toEndOf="@+id/butt_fixed"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:text="@string/butt_statistic"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toEndOf="@+id/butt_watched"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:onClick="goToStatistic"/>
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <LinearLayout
+            android:id="@+id/frame_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@+id/myview" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -6,7 +6,7 @@
 
 Аутентификация:
 
-![mobile_auth (2)](https://user-images.githubusercontent.com/72875986/172069704-3fba7500-fa25-4931-9f82-f7ecb6425ba2.jpg)
+<img height="540" width="1170" alt="auth" src="https://user-images.githubusercontent.com/72875986/172069704-3fba7500-fa25-4931-9f82-f7ecb6425ba2.jpg">
 
 Запрос к API осуществляется с главного экрана по IP-адресу и порту коммутатора, после чего результат диагностики отображается на виджете карты: 
 

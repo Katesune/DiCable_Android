@@ -6,11 +6,11 @@
 
 Аутентификация:
 
-<img height="585" width="270" alt="auth" src="https://user-images.githubusercontent.com/72875986/172069704-3fba7500-fa25-4931-9f82-f7ecb6425ba2.jpg">
+<img height="485" width="170" alt="auth" src="https://user-images.githubusercontent.com/72875986/172069704-3fba7500-fa25-4931-9f82-f7ecb6425ba2.jpg">
 
 Запрос к API осуществляется с главного экрана по IP-адресу и порту коммутатора, после чего результат диагностики отображается на виджете карты: 
 
-![Screenshot_20220523_210407_com example dicable (1)](https://user-images.githubusercontent.com/72875986/172069750-da39e15b-ba36-41c8-a9cf-4d0ad8626508.jpg)
+<img height="485" width="170" alt="main" src="https://user-images.githubusercontent.com/72875986/172069750-da39e15b-ba36-41c8-a9cf-4d0ad8626508.jpg">
 
 На каждом виджете расположены две кнопки, при нажатии элемент добавляется в коллекцию, левая кнопка добавляет элемент в коллекцию "Просмотрено", правый - "Фиксировано".
 Если кнопка черного цвета, элемент уже находится в коллекции. В правом нижнем углу виджета есть кнопка, которая раскрывает или скрывает элемент.

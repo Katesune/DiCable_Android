@@ -1,8 +1,8 @@
 # DiCable_Android
 
-ВКР - Приложение на базе Android
+Приложение на базе Android
 
-Реализовано подключение к собственному API.
+Реализовано подключение к собственному API - https://github.com/Katesune/DiCable_API.
 
 Аутентификация:
 
